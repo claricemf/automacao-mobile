@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.1 (Python 3.9.4 on win32)" generated="20210424 09:30:00.216" rpa="false" schemaversion="2">
+<suite id="s1" name="CadastrarPessoaTest" source="C:\Users\clarice\Documents\repositorio\automacao-mobile\tests\CadastrarPessoaTest.robot">
+<test id="s1-t1" name="CT01: Cadastrar Pessoa - Sucesso">
+<kw name="Dado que estou na tela de inicial" library="CadastrarPessoaResource">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${platformName}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>app=${app}</arg>
+<arg>ensureWebviewsHavePages=${ensureWebviewsHavePages}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20210424 09:30:00.572" endtime="20210424 09:30:20.454"/>
+</kw>
+<status status="PASS" starttime="20210424 09:30:00.572" endtime="20210424 09:30:20.455"/>
+</kw>
+<kw name="E acesso a tela de &quot;CadastroPessoas&quot;" library="CadastrarPessoaResource">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.example.cursoappium:id/button_cadastrar</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20210424 09:30:26.448" level="INFO">&lt;?xml version='1.0' encoding='UTF-8' standalone='yes' ?&gt;
+&lt;hierarchy index="0" class="hierarchy" rotation="0" width="1080" height="2028"&gt;
+  &lt;android.widget.FrameLayout index="0" package="com.google.android.apps.nexuslauncher" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2028]" displayed="true"&gt;
+    &lt;android.widget.LinearLayout index="0" package="com.google.android.apps.nexuslauncher" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2028]" displayed="true"&gt;
+      &lt;android.widget.FrameLayout index="0" package="com.google.android.apps.nexuslauncher" class="android.widget.FrameLayout" text="" resource-id="android:id/content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2028]" displayed="true"&gt;
+        &lt;android.widget.FrameLayout index="0" package="com.google.android.apps.nexuslauncher" class="android.widget.FrameLayout" text="" resource-id="com.google.android.apps.nexuslauncher:id/launcher" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2028]" displayed="true"&gt;
+          &lt;android.widget.FrameLayout index="0" package="com.google.android.apps.nexuslauncher" class="android.widget.FrameLayout" text="" resource-id="com.google.android.apps.nexuslauncher:id/drag_layer" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2028]" displayed="true"&gt;
+            &lt;android.view.View index="0" package="com.google.android.apps.nexuslauncher" class="android.view.View" text="" resource-id="com.google.android.apps.nexuslauncher:id/scrim_view" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2028]" displayed="true"&gt;
+              &lt;android.view.View index="0" package="com.google.android.apps.nexuslauncher" class="android.view.View" text="" content-desc="Apps list" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[507,1549][573,1615]" displayed="true" /&gt;
+            &lt;/android.view.View&gt;
+            &lt;android.widget.ScrollView index="1" package="com.google.android.apps.nexuslauncher" class="android.widget.ScrollView" text="" resource-id="com.google.android.apps.nexuslauncher:id/workspace" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2028]" displayed="true"&gt;
+              &lt;android.view.ViewGroup index="0" package="com.google.android.apps.nexuslauncher" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[22,88][1058,1582]" displayed="true"&gt;
+                &lt;android.view.ViewGroup index="0" package="com.google.android.apps.nexuslauncher" class="android.view.ViewGroup" text="" resource-id="com.google.android.apps.nexuslauncher:id/workspace_page_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[38,88][1042,1582]" displayed="true"&gt;
+                  &lt;android.widget.FrameLayout index="0" package="com.google.android.apps.nexuslauncher" class="android.widget.FrameLayout" text="" resource-id="com.google.android.apps.nexuslauncher:id/search_container_workspace" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[38,88][1042,386]" displayed="true"&gt;
+                    &lt;android.widget.LinearLayout index="0" package="com.google.android.apps.nexuslauncher" class="android.widget.LinearLayout" text="" resource-id="com.google.android.apps.nexuslauncher:id/smartspace_content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[274,88][806,386]" displayed="true"&gt;
+                      &lt;android.widget.TextView index="0" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="Saturday, Apr 24" content-desc="Saturday, Apr 24" resource-id="com.google.android.apps.nexuslauncher:id/clock" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[274,88][806,386]" displayed="true" /&gt;
+                    &lt;/android.widget.LinearLayout&gt;
+                  &lt;/android.widget.FrameLayout&gt;
+                &lt;/android.view.ViewGroup&gt;
+              &lt;/android.view.ViewGroup&gt;
+            &lt;/android.widget.ScrollView&gt;
+            &lt;android.view.View index="2" package="com.google.android.apps.nexuslauncher" class="android.view.View" text="" resource-id="com.google.android.apps.nexuslauncher:id/page_indicator" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,1549][1080,1615]" displayed="true" /&gt;
+            &lt;android.widget.FrameLayout index="3" package="com.google.android.apps.nexuslauncher" class="android.widget.FrameLayout" text="" resource-id="com.google.android.apps.nexuslauncher:id/hotseat" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,1615][1080,2028]" displayed="true"&gt;
+              &lt;android.view.ViewGroup index="0" package="com.google.android.apps.nexuslauncher" class="android.view.ViewGroup" text="" resource-id="com.google.android.apps.nexuslauncher:id/layout" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,1615][1080,2028]" displayed="true"&gt;
+                &lt;android.view.ViewGroup index="0" package="com.google.android.apps.nexuslauncher" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[38,1615][1042,1808]" displayed="true"&gt;
+                  &lt;android.widget.TextView index="0" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="Phone" content-desc="Phone" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[38,1615][239,1808]" displayed="true" /&gt;
+                  &lt;android.widget.TextView index="1" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="Messages" content-desc="Messages" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[239,1615][440,1808]" displayed="true" /&gt;
+                  &lt;android.widget.TextView index="2" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="Play Store" content-desc="Play Store" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[440,1615][641,1808]" displayed="true" /&gt;
+                  &lt;android.widget.TextView index="3" package="com.google.android.apps.nexuslauncher" class="android.widget.TextView" text="Chrome" content-desc="Chrome" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[641,1615][842,1808]" displayed="true" /&gt;
+                &lt;/android.view.ViewGroup&gt;
+              &lt;/android.view.ViewGroup&gt;
+              &lt;android.widget.FrameLayout index="1" package="com.google.android.apps.nexuslauncher" class="android.widget.FrameLayout" text="" content-desc="Search" resource-id="com.google.android.apps.nexuslauncher:id/search_container_hotseat" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[53,1868][1027,2022]" displayed="true"&gt;
+                &lt;android.widget.ImageView index="0" package="com.google.android.apps.nexuslauncher" class="android.widget.ImageView" text="" resource-id="com.google.android.apps.nexuslauncher:id/g_icon" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[104,1912][170,1978]" displayed="true" /&gt;
+                &lt;android.view.View index="2" package="com.google.android.apps.nexuslauncher" class="android.view.View" text="" content-desc="Voice search" resource-id="com.google.android.apps.nexuslauncher:id/mic_icon" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[857,1868][1011,2022]" displayed="true" /&gt;
+              &lt;/android.widget.FrameLayout&gt;
+            &lt;/android.widget.FrameLayout&gt;
+          &lt;/android.widget.FrameLayout&gt;
+        &lt;/android.widget.FrameLayout&gt;
+      &lt;/android.widget.FrameLayout&gt;
+    &lt;/android.widget.LinearLayout&gt;
+  &lt;/android.widget.FrameLayout&gt;
+&lt;/hierarchy&gt;</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210424 09:30:27.618" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210424 09:30:26.449" endtime="20210424 09:30:27.619"/>
+</kw>
+<msg timestamp="20210424 09:30:27.620" level="FAIL">Element locator 'id=com.example.cursoappium:id/button_cadastrar' did not match any elements after 5 seconds</msg>
+<status status="FAIL" starttime="20210424 09:30:20.457" endtime="20210424 09:30:27.620"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.example.cursoappium:id/button_cadastrar</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20210424 09:30:27.621" endtime="20210424 09:30:27.621"/>
+</kw>
+<status status="FAIL" starttime="20210424 09:30:20.456" endtime="20210424 09:30:27.621"/>
+</kw>
+<kw name="Quando informo os meus dados cadastrais" library="CadastrarPessoaResource">
+<status status="NOT RUN" starttime="20210424 09:30:27.622" endtime="20210424 09:30:27.622"/>
+</kw>
+<kw name="E solicito a criação da pessoa" library="CadastrarPessoaResource">
+<status status="NOT RUN" starttime="20210424 09:30:27.623" endtime="20210424 09:30:27.623"/>
+</kw>
+<kw name="Então o app exibe uma mensagem de sucesso">
+<status status="NOT RUN" starttime="20210424 09:30:27.629" endtime="20210424 09:30:27.629"/>
+</kw>
+<status status="FAIL" starttime="20210424 09:30:00.570" endtime="20210424 09:30:27.630">Element locator 'id=com.example.cursoappium:id/button_cadastrar' did not match any elements after 5 seconds</status>
+</test>
+<doc>Suíte de teste de cadastro de pessoa</doc>
+<status status="FAIL" starttime="20210424 09:30:00.219" endtime="20210424 09:30:27.632"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="CadastrarPessoaTest">CadastrarPessoaTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
