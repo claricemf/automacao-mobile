@@ -1,1 +1,1 @@
-# automacao-mobile
+# Automação Mobile - Utilizando Appium + Robotframework
