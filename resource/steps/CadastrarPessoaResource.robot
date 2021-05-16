@@ -4,20 +4,13 @@ Resource    ../variables/Globais.robot
 Resource    ../variables/MappingCadastrarPessoa.robot
 Library     AppiumLibrary
 
-*** Variables ***
-
 *** Keywords ***
 # ---- DADO
-Dado que estou na tela inicial do APP
-    Set Appium Timeout    20
-    Open Application    ${REMOTE_URL}   platformName=${platformName}
-    ...   deviceName=${deviceName}  app=${app}  ensureWebviewsHavePages=${ensureWebviewsHavePages}
-
-# ---- E
-E acesso a tela de "CadastroPessoas"
+Dado que estou na tela de "CadastroPessoas"
     Wait Until Element Is Visible    ${TELA_CADASTRO.buttonCadastrarPessoa}
     Click Element    ${TELA_CADASTRO.buttonCadastrarPessoa}
 
+# ---- E
 E não informo o campo "${NOME_CAMPO}"
     Wait Until Element Is Visible    ${TELA_CADASTRO.textInput${NOME_CAMPO}}
 
@@ -41,6 +34,10 @@ E informo novamente o email "${EMAIL}"
 Quando solicito a criação da pessoa
     Clicar no botão Cadastrar nova pessoa
 
+Quando solicito novamente a criação da pessoa
+    Clicar no botão Cadastrar nova pessoa
+    Clicar no botão Cadastrar nova pessoa
+
 # ---- ENTÃO
 Então o app exibe a mensagem no campo "${MENSAGEM}"
     Wait Until Element Is Visible    ${TELA_CADASTRO.mensagemError}
@@ -54,6 +51,12 @@ Então o app exibe o erro "${MENSAGEM}"
     Wait Until Page Contains    ${MENSAGEM}
 
 # ---- STEPS
+Acessar a tela inicial do app
+    Set Appium Timeout    20
+    Open Application    ${REMOTE_URL}   platformName=${platformName}
+    ...   deviceName=${deviceName}      app=${app}
+    ...   ensureWebviewsHavePages=${ensureWebviewsHavePages}
+
 Clicar no botão Cadastrar nova pessoa
     Wait Until Element Is Visible    ${TELA_CADASTRO.botaoCadastrar}
     Click Element    ${TELA_CADASTRO.botaoCadastrar}

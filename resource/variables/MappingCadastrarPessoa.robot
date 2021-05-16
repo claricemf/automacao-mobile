@@ -1,8 +1,6 @@
 *** Settings ***
 Documentation  Mapping dos campos da tela Cadastrar Pessoa
 
-# Library     SeleniumLibrary
-
 *** Variables ***
 &{TELA_CADASTRO}      buttonCadastrarPessoa=id=com.example.cursoappium:id/button_cadastrar
 ...                   textInputNome=id=com.example.cursoappium:id/TextInputNome
