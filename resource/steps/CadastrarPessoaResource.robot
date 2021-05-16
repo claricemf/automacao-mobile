@@ -35,7 +35,7 @@ Quando solicito a criação da pessoa
     Clicar no botão Cadastrar nova pessoa
 
 Quando solicito novamente a criação da pessoa
-    Clicar no botão Cadastrar nova pessoa
+    Wait Until Page Does Not Contain Element     ${TELA_CADASTRO.mensagemError}
     Clicar no botão Cadastrar nova pessoa
 
 # ---- ENTÃO
